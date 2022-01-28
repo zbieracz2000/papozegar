@@ -15,7 +15,7 @@ install:
 	install -s papozegar ${PREFIX}/bin
 	-mkdir -p ${DOCDIR}
 	chmod 755 ${DOCDIR}
-	install -m 644 -t ${DOCDIR} CHANGELOG LICENSE README README.html RELEASE_NOTES
+	install -m 644 -t ${DOCDIR} LICENSE README
 
 uninstall:
 	-rm ${PREFIX}/bin/papozegar
