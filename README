@@ -1,0 +1,14 @@
+Papozegar
+
+Ten program jest rozpowszechniany na licencji GPL 2.
+
+Czy kiedykolwiek zastanawiałeś się, ile czasu pozostało do wybicia godziny papieżowej (21:37)?
+MAMY ROZWIĄZANIE!
+Papozegar za pomocą prostej komendy "papozegar" pokaże nam ile czasu pozostało do tego jakże ważnego momentu.
+
+
+Instalacja na Linuxie jest prosta, wystarczy wpisać "make install" by zainstalować program na naszym komputerze.
+Jeżeli mamy do czynienia z architekturą inną niż AMD64 to szybkie "make" pozwoli nam skompilować program
+na potrzeby naszego procesora. Wymagane jest GCC.
+
+Nie sprawdzałem czy program działa na Windowsie.
