@@ -1,10 +1,12 @@
-//Papozegar pokazuje nam ile czasu zosta≈Ço do Papie≈ºowej (21:37)
+//Papozegar pokazuje nam ile czasu zosta≥o do Papieøowej (21:37)
 //by zbieracz2000
 #include <stdio.h>
+#include <locale.h>
 #include <time.h>
 
 int main ()
 {
+  setlocale(LC_CTYPE, "Polish");
   time_t rawtime;
   struct tm * timeinfo;
   time( &rawtime );
@@ -22,7 +24,7 @@ int main ()
     }
   if(cur_min == 37) rem_min=0;
   if(cur_min >= 38)
-    {   
+    {
         rem_min=97-cur_min;
         aft37=1;
     }
@@ -35,7 +37,7 @@ int main ()
         if(cur_min <=36)
         {
             rem_hour=0;
-        }  
+        }
         else
         {
             rem_hour=23;
@@ -44,26 +46,26 @@ int main ()
   if(cur_hour == 22)
     {
         rem_hour=23;
-    } 
+    }
   if(cur_hour == 23)
     {
         rem_hour=22;
-    } 
-  if(cur_min == 37) 
-    {    
+    }
+  if(cur_min == 37)
+    {
         if (cur_hour == 21)
         {
              papiezowa=1;
         }
-    } 
+    }
   if (aft37 == 1)
   {
     rem_hour--;
   }
-  if (papiezowa == 0) 
+  if (papiezowa == 0)
     {
-    printf("Do papie≈ºowej zosta≈Ço: %02d:%02d \n", rem_hour, rem_min);
+    printf("Do papieøowej zosta≥o: %02d:%02d \n", rem_hour, rem_min);
     }
-    if (papiezowa==1) printf("PAPIE≈ªOWA!!! \n");
+    if (papiezowa==1) printf("PAPIEØOWA!!! \n");
   return 0;
 }
