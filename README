@@ -8,8 +8,10 @@ Papozegar za pomocą prostej komendy "papozegar" pokaże nam ile czasu pozostał
 
 
 Instalacja na Linuxie jest prosta, wystarczy wpisać "make install" by zainstalować program na naszym komputerze.
-Jeżeli mamy do czynienia z architekturą inną niż AMD64 to szybkie "make" pozwoli nam skompilować program
+Jeżeli mamy do czynienia z architekturą (lub sysemem) inną niż te którym zapewniłem wsparcie to szybkie "make" pozwoli nam skompilować program
 na potrzeby naszego procesora. Wymagane jest GCC.
+
+Wśród paczek można pobrać wersje skompilowane pod Linuxa AMD64, i386 oraz Windowsa. Binarka którą zassie wam "git clone" to Linuxowa wersja AMD64.
 
 Pod Windowsem program również działa bez problemów. Wywołamy go komendą "papozegar" z CMD w katalogu w którym go umieścimy.
 Niestety nie działa to tak fajniutko w każdym miejscu jak na Linuxie.
