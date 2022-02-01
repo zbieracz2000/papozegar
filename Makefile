@@ -3,10 +3,10 @@ PREFIX=/usr
 DOCDIR=${PREFIX}/share/doc/papozegar
 
 all:
-	${CC} -pthread papozegar.c `xml2-config --libs --cflags` -O2 -o papozegar
+	${CC} -pthread papozegar.c -O2 -o papozegar
 
 debug:
-	${CC} -g -pthread papozegar.c `xml2-config --libs --cflags` -O0 -o papozegar
+	${CC} -g -pthread papozegar.c -O0 -o papozegar
 
 clean:
 	-rm *.o papozegar
